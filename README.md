@@ -15,7 +15,7 @@ Finally, to apply the Kuwahara filter, we produce Kuwahara images using `kuwahar
 
 ![alt text](res/ganstruct.png)
 
-we only require training the I2PNet model (left-most model in green box), placing our high-resolution images on the bottom (Input image) and Kuwahara filtered image on top (Intermediate result). This allows the structure to learn Kuwahara filters and maintain pixelisation, learned by the fixed cell-embedding from the red box. A result from this is given here, applying Kuwahara smoothing while maintaining pixelisation:
+we only require training the I2PNet model (left-most model in green box), placing our high-resolution images on the bottom (Input image) and Kuwahara filtered image on top (Intermediate result). This allows the structure to learn Kuwahara filters and maintain pixelisation, done due to the fixed cell-embedding from the red box. A result from this is given here, applying Kuwahara smoothing while maintaining pixelisation:
 
 ![alt text](res/result.png)
 
