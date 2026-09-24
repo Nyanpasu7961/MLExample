@@ -15,10 +15,10 @@ Finally, to apply the Kuwahara filter, we produce Kuwahara images using `kuwahar
 
 ![alt text](res/ganstruct.png)
 
-we only require training the I2PNet model (left-most model in green box), placing our high-resolution images on the bottom (Input image) and Kuwahara filtered image on top (Intermediate result). This allows the structure to learn Kuwahara filters and maintin pixelisation, learned by the fixed cell-embedding from the red box. A result from this is given here, applying Kuwahara smoothing while maintaining pixelisation:
+we only require training the I2PNet model (left-most model in green box), placing our high-resolution images on the bottom (Input image) and Kuwahara filtered image on top (Intermediate result). This allows the structure to learn Kuwahara filters and maintain pixelisation, learned by the fixed cell-embedding from the red box. A result from this is given here, applying Kuwahara smoothing while maintaining pixelisation:
 
 ![alt text](res/result.png)
 
- Training code for Pixelisation model is included in train.py, adapted from the original GAN architecture https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/docs/tips.md. The Kuwahara filter is included in `kuwahara.py`, with pre-prep data using `prepare_data.py` and SSIM used to filter our artificial dataset is in `ssim.py`.
+ Training code for Pixelisation model is included in train.py, adapted from the original GAN architecture https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/docs/tips.md. The Kuwahara filter is included in `kuwahara.py`, with pre-prepare data using `prepare_data.py` and SSIM used to filter our artificial dataset is in `ssim.py`.
 
  Note the full datasets and model parameters are not included in the final version.
