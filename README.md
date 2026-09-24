@@ -3,7 +3,7 @@ This project is used to meld an existing pixelisation GAN architecture (https://
 
 ![Kuwahara Application](res/kuwaharabad.png)
 
-Before applying the injection, GAN Discriminator weights needed to be retrained as they were not included in the inherited Github project, which involved freezing the Generator (see line 265 of `./models/pixelization_model.py`):
+which gives a blobbing effect and clashes with the pixel style. As such, methods other than applying the filter is required. Before applying the injection, GAN Discriminator weights needed to be retrained as they were not included in the inherited Github project, which involved freezing the Generator (see line 265 of `./models/pixelization_model.py`):
 ```
     def backward_G(self,epoch):
         """Calculate the loss for generators G_A and G_B"""
