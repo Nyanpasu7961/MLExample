@@ -21,4 +21,4 @@ we only require training the I2PNet model (left-most model in green box), placin
 
  Training code for Pixelisation model is included in train.py, adapted from the original GAN architecture https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/docs/tips.md. The Kuwahara filter is included in `kuwahara.py`, with pre-prepare data using `prepare_data.py` and SSIM used to filter our artificial dataset is in `ssim.py`.
 
- Note the full datasets and model parameters are not included in the final version.
+ Note the full datasets and model parameters are not included in the final version. Visualisation and integration into systems is given in the `/util` directory.
